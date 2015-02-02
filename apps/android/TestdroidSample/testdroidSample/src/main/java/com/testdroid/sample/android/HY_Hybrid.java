@@ -79,8 +79,10 @@ public class HY_Hybrid extends Activity implements View.OnClickListener {
             wv_webView.setWebViewClient(this.webViewClient);
         }
 
-        // enable WebView debugging - for Appium to be able to switch to WebView context
-        setWebContentsDebuggingEnabled(true);
+        if (android.os.Build.VERSION.SDK_INT >= 19) {
+            // enable WebView debugging - for Appium to be able to switch to WebView context
+            setWebContentsDebuggingEnabled(true);
+        }
 
         // don't auto-pop keyboard
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
