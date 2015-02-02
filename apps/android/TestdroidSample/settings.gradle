@@ -1,1 +1,2 @@
 include ':testdroidSample'
+include ':testdroidSampleApi7'
