@@ -44,10 +44,10 @@
             <!--android:name=".PT_PingTest"-->
             <!--android:screenOrientation="portrait"-->
             <!--android:label="@string/pt_title"></activity>-->
-        <!--<activity-->
-            <!--android:name=".FC_Functions"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:label="@string/fc_title"></activity>-->
+        <activity
+            android:name=".FC_Functions"
+            android:screenOrientation="portrait"
+            android:label="@string/fc_title"></activity>
         <!--<activity-->
             <!--android:name=".DI_DeviceInfo"-->
             <!--android:screenOrientation="portrait"-->

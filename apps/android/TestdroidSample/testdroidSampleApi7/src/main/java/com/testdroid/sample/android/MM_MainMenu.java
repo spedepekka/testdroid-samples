@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-//import utils.Helpers;
+import utils.Helpers;
 
 /**
  * @author Saad Chaudhry <saad.chaudry@bitbar.com>
@@ -40,7 +40,7 @@ public class MM_MainMenu extends ActionBarActivity implements View.OnClickListen
 //        iv_title = (ImageView) findViewById(R.id.mm_iv_title);
 //        b_native = (Button) findViewById(R.id.mm_b_native);
 //        b_hybrid = (Button) findViewById(R.id.mm_b_hybrid);
-//        b_functions = (Button) findViewById(R.id.mm_b_functions);
+        b_functions = (Button) findViewById(R.id.mm_b_functions);
 //        b_deviceInfo = (Button) findViewById(R.id.mm_b_deviceInfo);
 //        b_settings = (Button) findViewById(R.id.mm_b_settings);
 
@@ -48,7 +48,7 @@ public class MM_MainMenu extends ActionBarActivity implements View.OnClickListen
 //        iv_title.setOnClickListener(this);
 //        b_native.setOnClickListener(this);
 //        b_hybrid.setOnClickListener(this);
-//        b_functions.setOnClickListener(this);
+        b_functions.setOnClickListener(this);
 //        b_deviceInfo.setOnClickListener(this);
 //        b_settings.setOnClickListener(this);
 
@@ -79,7 +79,7 @@ public class MM_MainMenu extends ActionBarActivity implements View.OnClickListen
     @Override
     public void onClick(View view) {
 
-//        switch (view.getId()) {
+        switch (view.getId()) {
 //            case R.id.mm_iv_title:
 //                goto_AB();
 //                break;
@@ -89,16 +89,16 @@ public class MM_MainMenu extends ActionBarActivity implements View.OnClickListen
 //            case R.id.mm_b_hybrid:
 //                goto_HY();
 //                break;
-//            case R.id.mm_b_functions:
-//                goto_FC();
-//                break;
+            case R.id.mm_b_functions:
+                goto_FC();
+                break;
 //            case R.id.mm_b_deviceInfo:
 //                goto_DI();
 //                break;
 //            case R.id.mm_b_settings:
 //                goto_SE();
 //                break;
-//        }
+        }
 
     }
 
@@ -119,11 +119,11 @@ public class MM_MainMenu extends ActionBarActivity implements View.OnClickListen
 //        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 //    }
 //
-//    private void goto_FC() {
-//        Intent intent = new Intent(MM_MainMenu.this, FC_Functions.class);
-//        startActivity(intent);
-//        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//    }
+    private void goto_FC() {
+        Intent intent = new Intent(MM_MainMenu.this, FC_Functions.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
 //
 //    private void goto_DI() {
 //        Intent intent = new Intent(MM_MainMenu.this, DI_DeviceInfo.class);
